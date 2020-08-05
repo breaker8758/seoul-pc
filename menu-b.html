@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>MENU - B</title>
+    <link rel="stylesheet" type="text/css" href="common/css/slick.css"/>
+    <script type="text/javascript" src="common/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="common/js/slick.min.js"></script>
+
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var, b, u, i, center,
+        dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; font-family:'Malgun Gothic'; 
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        *:focus { outline: none; }
+
+        .main .slick-prev, .main .slick-next {font-size: 0;    z-index: 10000; display: block; position: absolute; top: calc(50% - 24px); width: 45px; height: 72px; padding: 0; border: none; background: transparent; line-height: 0; -webkit-transform: translateY(-50%); transform: translateY(-50%); cursor: pointer; }
+
+        .main .slick-prev:hover:before, .main .slick-prev:focus:before, .main .slick-next:hover:before, .main .slick-next:focus:before { opacity: 1; }
+
+        .main .slick-prev.slick-disabled:before, .main .slick-next.slick-disabled:before { opacity: .1; }
+
+        .main .slick-prev:before, .main .slick-next:before { font-family: 'slick'; font-size: 20px; line-height: 1; color: #FFF; opacity: .75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+        .main .slick-prev { left: 20px; background: url(common/images/slider_prev.png) no-repeat; }
+
+        .main [dir=rtl] .slick-prev { right: -25px; left: auto; }
+
+        .main .slick-next { right: 20px; background: url(common/images/slider_next.png) no-repeat;}
+
+        .main [dir=rtl] .slick-next { right: auto; left: -25px; }     
+
+        .slick-track{ text-align: center;}
+
+        .slick-track .image{width: 1920px; text-align: center; display: inline-block;}  
+        
+        .slick-slide img {    display: inline-block; cursor: pointer;}
+    </style>
+</head>
+<body class="main"> 
+    
+    <div id="wrap">
+        <div class="content ">            
+            <div class="slider fade">
+				<div>
+					<div class="image">
+						<img src="common/images/menu_b_1.png" alt="메뉴구조 B안">
+					</div>
+				</div>
+				<div>
+					<div class="image">
+						<img src="common/images/menu_b_2.png" alt="메뉴구조 B안2">
+					</div>
+				</div>				
+			</div>           
+        </div>
+    </div>
+
+    <script>  
+
+        $('.fade').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            // cssEase: 'linear',
+            centerMode: true
+        });  
+
+        $('.image').click(function() {
+            $('.slick-next').click()
+        });
+        
+    </script>
+</body>
+
+</html>
